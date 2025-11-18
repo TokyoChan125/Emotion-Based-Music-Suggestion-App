@@ -15,8 +15,8 @@ app.use('/models', express.static(path.join(__dirname, 'models')));
 
 // Spotify credentials: you can hardcode your client id/secret here
 // Replace the placeholder strings below with your actual credentials
-const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID || '0b7cdbcd9614456798ab1816a2490600';
-const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET || 'be4004a751514627bb4e24eacee2980f';
+const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID || '';
+const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET || '';
 
 const spotifyApi = new SpotifyWebApi({
   clientId: SPOTIFY_CLIENT_ID,
